@@ -228,7 +228,7 @@ async function fillAndSearchWithDouban(title) {
     const input = document.getElementById('searchInput');
     if (input) {
         input.value = safeTitle;
-        // await search(); // 使用已有的search函数执行搜索
+        await search(); // 使用已有的search函数执行搜索
         
         // 更新浏览器URL，使其反映当前的搜索状态
         try {
